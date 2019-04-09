@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
   ExStream<bool> btnStream;
 
   MyHomePage({@required this.title}) {
-    this.btnStream = ExStream();
+    this.btnStream = ExStream<bool>(false);
   }
 
   void btnPressed() {

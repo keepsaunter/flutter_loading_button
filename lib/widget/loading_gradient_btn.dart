@@ -93,6 +93,7 @@ class _AnimState extends State<LoadingGradientBtn> with SingleTickerProviderStat
   @override
   void dispose() {
     animationController.dispose();
+    widget.exStream.dispose();
     super.dispose();
   }
 }
